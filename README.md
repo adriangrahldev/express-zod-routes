@@ -117,9 +117,19 @@ Other great options exist (`express-zod-api`, custom Zod wrappers). This package
 
 See [`examples/basic-express`](examples/basic-express).
 
+## Maintainers
+
+Internal docs (publish to npm with provenance, historical plan): **[`docs/README.md`](docs/README.md)**.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Security
+
+See [SECURITY.md](SECURITY.md). Prefer [private advisories](https://github.com/adriangrahldev/express-zod-routes/security/advisories/new) over public issues for vulnerabilities.
+
+Maintainers: releases with npm **provenance** are documented in [docs/PUBLISH_NPM.md](docs/PUBLISH_NPM.md).
 
 ## License
 
