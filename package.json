@@ -1,6 +1,6 @@
 {
   "name": "express-zod-routes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware to validate body, query, and params with Zod — typed req.validated and consistent 400 errors",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -21,7 +21,8 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "SECURITY.md"
   ],
   "sideEffects": [
     "./src/global-augment.ts"
@@ -44,7 +45,7 @@
     "typescript",
     "mern"
   ],
-  "author": "",
+  "author": "Adrian Grahl (https://github.com/adriangrahldev)",
   "license": "MIT",
   "repository": {
     "type": "git",
