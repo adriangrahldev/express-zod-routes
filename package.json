@@ -1,0 +1,79 @@
+{
+  "name": "express-zod-routes",
+  "version": "1.0.0",
+  "description": "Express middleware to validate body, query, and params with Zod — typed req.validated and consistent 400 errors",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./src/global-augment.ts"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "express",
+    "zod",
+    "validation",
+    "middleware",
+    "typescript",
+    "mern"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adriangrahldev/express-zod-routes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adriangrahldev/express-zod-routes/issues"
+  },
+  "homepage": "https://github.com/adriangrahldev/express-zod-routes#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "express": "^4.18.0 || ^5.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@types/supertest": "^6.0.2",
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "express": "^4.21.0",
+    "prettier": "^3.4.2",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8",
+    "zod": "^3.24.1"
+  }
+}
