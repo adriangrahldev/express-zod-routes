@@ -1,6 +1,8 @@
 # Plan profesional — Express + Zod (rutas tipadas)
 
-> Objetivo: librería npm mantenible, documentación clara, CI en GitHub y releases versionadas.
+> **Estado:** v1 publicada en [GitHub](https://github.com/adriangrahldev/express-zod-routes) y [npm](https://www.npmjs.com/package/express-zod-routes). Este documento sirve como **referencia histórica** y base para el roadmap.
+
+> Objetivo original: librería npm mantenible, documentación clara, CI en GitHub y releases versionadas.
 
 ---
 
@@ -13,7 +15,7 @@
 | Errores HTTP 400 con payload JSON consistente                         | CLI                      |
 | Compatible Express 4.x / 5.x                                          | GraphQL                  |
 
-**Nombre del paquete (npm):** `express-zod-routes` (o `@tu-usuario/express-zod-routes` si usas scope).
+**Paquete (npm):** [`express-zod-routes`](https://www.npmjs.com/package/express-zod-routes).
 
 ---
 
