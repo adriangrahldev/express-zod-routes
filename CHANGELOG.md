@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-03-18
+
+### Added
+
+- **Shorter CLI:** `npx express-zod-routes <slug>` (same as `add-route`)
+- Alias commands: `gen`, `new`
+- **Binary `ezr`** for global installs (`ezr orders`)
+- **Smarter default `--out-dir`:** `src/routes` / `routes` based on existing folders
+
 ## [1.1.0] - 2026-03-18
 
 ### Added
@@ -58,6 +67,7 @@ Peer dependencies: `express` ^4.18 || ^5, `zod` ^3.22.
 - **Repository:** <https://github.com/adriangrahldev/express-zod-routes>
 - **Documentation:** README in the repository
 
+[1.2.0]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.2.0
 [1.1.0]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.1.0
 [1.0.1]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.0.1
 [1.0.0]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.0.0

@@ -21,22 +21,35 @@ Peer dependencies:
 
 ## CLI — scaffold a route module
 
-Generate a **Router** with `validate({ body })` already wired (Zod + `express-zod-routes`):
+Generate a **Router** with `validate({ body })` already wired (Zod + `express-zod-routes`).
+
+**Shortest** (defaults to `./src/routes` or `./routes` when that folder exists):
 
 ```bash
-npx express-zod-routes add-route users
-npx express-zod-routes add-route products --out-dir src/routes
-npx express-zod-routes add-route order-item --mount /api/order-items --force
+npx express-zod-routes orders
+npx express-zod-routes gen invoices
 ```
 
-Creates e.g. `routes/users.routes.ts`. Mount in your app:
+After **global install** (`npm i -g express-zod-routes`), use the **`ezr`** binary:
+
+```bash
+ezr orders
+```
+
+Override folder or path:
+
+```bash
+npx express-zod-routes add-route products --out-dir src/api --mount /api/v1/products --force
+```
+
+Mount in your app:
 
 ```ts
-import { usersRouter } from './routes/users.routes.js';
-app.use('/users', usersRouter);
+import { ordersRouter } from './routes/orders.routes.js';
+app.use('/orders', ordersRouter);
 ```
 
-Run `npx express-zod-routes --help` for all options.
+Run `npx express-zod-routes --help` for details.
 
 ## Quick start
 

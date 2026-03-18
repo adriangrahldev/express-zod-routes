@@ -1,6 +1,6 @@
 {
   "name": "express-zod-routes",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Express middleware to validate body, query, and params with Zod — typed req.validated and consistent 400 errors",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -38,7 +38,8 @@
     "prepublishOnly": "npm run build && npm run test"
   },
   "bin": {
-    "express-zod-routes": "./dist/cli.js"
+    "express-zod-routes": "./dist/cli.js",
+    "ezr": "./dist/cli.js"
   },
   "keywords": [
     "express",
