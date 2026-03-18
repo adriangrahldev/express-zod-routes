@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-03-18
+
+### Added
+
+- **CLI** `express-zod-routes add-route <slug>` — scaffolds `{slug}.routes.ts` with `validate`, Zod body schema stub, and mount hint (`npx express-zod-routes --help`)
+
 ## [1.0.1] - 2026-03-18
 
 ### Added
@@ -52,5 +58,6 @@ Peer dependencies: `express` ^4.18 || ^5, `zod` ^3.22.
 - **Repository:** <https://github.com/adriangrahldev/express-zod-routes>
 - **Documentation:** README in the repository
 
+[1.1.0]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.1.0
 [1.0.1]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.0.1
 [1.0.0]: https://github.com/adriangrahldev/express-zod-routes/releases/tag/v1.0.0

@@ -19,6 +19,25 @@ Peer dependencies:
 - `express` `^4.18.0 || ^5.0.0`
 - `zod` `^3.22.0`
 
+## CLI — scaffold a route module
+
+Generate a **Router** with `validate({ body })` already wired (Zod + `express-zod-routes`):
+
+```bash
+npx express-zod-routes add-route users
+npx express-zod-routes add-route products --out-dir src/routes
+npx express-zod-routes add-route order-item --mount /api/order-items --force
+```
+
+Creates e.g. `routes/users.routes.ts`. Mount in your app:
+
+```ts
+import { usersRouter } from './routes/users.routes.js';
+app.use('/users', usersRouter);
+```
+
+Run `npx express-zod-routes --help` for all options.
+
 ## Quick start
 
 ```ts
